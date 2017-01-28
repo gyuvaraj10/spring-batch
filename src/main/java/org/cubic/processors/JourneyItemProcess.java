@@ -18,7 +18,7 @@ public class JourneyItemProcess implements ItemProcessor<OtoDJourney, OtoDJourne
         String origin = otoDJourney.getOrigin();
         String priceMIn = otoDJourney.getMinPrice();
         String priceMax = otoDJourney.getMaxPrice();
-        log.info("Make a webservice call");
+
         log.info("Converted dto is:{},{},{},{}", destination, origin, priceMax, priceMIn);
         return otoDJourney;
     }
